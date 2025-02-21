@@ -1,4 +1,4 @@
 import re
-ss = str(input())
-sss = re.sub(r'([a-z])([A-Z])', r'\1_\2',ss)
-print(sss)
+s = 'Mission 223'
+ss = re.match('^Mission (\d+)',s)
+print(ss.group(1))
